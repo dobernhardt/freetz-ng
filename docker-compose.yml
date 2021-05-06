@@ -1,0 +1,11 @@
+version: '3'
+services:
+  freetz-ng:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: freetz-ng
+    user: 1000:1000
+    volumes:
+        - .:/home/freetz
+    working_dir: /home/freetz
